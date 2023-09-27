@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}login{% endblock title %}
+{% block content %}
+
+    <div class="container">
+        <div class="col-6">
+            <h1>Buy form</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fugiat velit culpa? Odit tempore neque iure, soluta itaque illum veritatis unde accusamus vel rerum recusandae deserunt doloribus eaque placeat beatae!</p>
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form | crispy }}<br>
+                <div class = 'user_option'>
+                    <button type="submit" class="order_online">
+                        Order
+                    </button>
+                </div>
+                    <pre>
+
+
+
+
+                    </pre>
+
+            </form>
+        </div>
+    </div>
+{% endblock content %}
